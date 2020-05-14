@@ -3,4 +3,16 @@
   hosts: localhost
   tasks:
      - name: aio-ansible - Template SO
-       command: cat /etc/passwd
+       command:
+           argv:
+             - "{{ parms.PARM0 }}"
+             - "{{ parms.PARM1 }}"
+             - "{{ parms.PARM2 }}"
+             - "{{ parms.PARM3 }}"
+             - "{{ parms.PARM4 }}"
+             - "{{ parms.PARM5 }}"
+             - "{{ parms.PARM6 }}"
+             - "{{ parms.PARM7 }}"
+             - "{{ parms.PARM8 }}"
+             - "{{ parms.PARM9 }}"
+       register: output.sdtout    
