@@ -1,7 +1,6 @@
 - name: aio-ansible - Template SO
-  command:
+  command: "{{ parms.PARM0 }}"
     argv:
-      - "{{ parms.PARM0 }}"
       - "{{ parms.PARM1 }}"
       - "{{ parms.PARM2 }}"
       - "{{ parms.PARM3 }}"
