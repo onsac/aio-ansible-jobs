@@ -1,3 +1,6 @@
 ---
 - name: aio-ansible - Template SO
-  command: cat /etc/passwd
+  hosts: localhost
+  tasks:
+     - name: aio-ansible - Template SO
+       command: cat /etc/passwd
