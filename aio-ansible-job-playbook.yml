@@ -1,15 +1,15 @@
 - name: aio-ansible - Template SO
   command:
     argv:
-      - {{ PARM0 }}
-      - {{ PARM1 }}
-      - {{ PARM2 }}
-      - {{ PARM3 }}
-      - {{ PARM4 }}
-      - {{ PARM5 }}
-      - {{ PARM6 }}
-      - {{ PARM7 }}
-      - {{ PARM8 }}
-      - {{ PARM9 }}
-  register: jobOutput      
+      - {{ parms.PARM0 }}
+      - {{ parms.PARM1 }}
+      - {{ parms.PARM2 }}
+      - {{ parms.PARM3 }}
+      - {{ parms.PARM4 }}
+      - {{ parms.PARM5 }}
+      - {{ parms.PARM6 }}
+      - {{ parms.PARM7 }}
+      - {{ parms.PARM8 }}
+      - {{ parms.PARM9 }}
+  register: output.sdtout     
       
