@@ -1,0 +1,14 @@
+- name: aio-ansible - Template SO
+  command:
+    argv:
+      - {{ PARM0 }}
+      - {{ PARM1 }}
+      - {{ PARM2 }}
+      - {{ PARM3 }}
+      - {{ PARM4 }}
+      - {{ PARM5 }}
+      - {{ PARM6 }}
+      - {{ PARM7 }}
+      - {{ PARM8 }}
+      - {{ PARM9 }}
+      
