@@ -11,5 +11,5 @@
       - "{{ parms.PARM7 }}"
       - "{{ parms.PARM8 }}"
       - "{{ parms.PARM9 }}"
-  register: output.sdtout     
+- register: output.sdtout     
       
