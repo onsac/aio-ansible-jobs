@@ -4,3 +4,4 @@
   tasks:
      - name: aio-ansible - TASK #1
        command: "{{ ansibleCommand }}"
+       register: "{{ output }}"
