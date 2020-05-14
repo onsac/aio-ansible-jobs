@@ -1,5 +1,3 @@
 ---
 - name: aio-ansible - Template SO
   command: echo {{ parms.PARM0 }}
-- register: output.sdtout     
-      
