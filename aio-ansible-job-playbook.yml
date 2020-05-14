@@ -1,5 +1,6 @@
+---
 - name: aio-ansible - Template SO
-  command: 
+  command:
     argv:
       - hostname
       - "{{ parms.PARM1 }}"
