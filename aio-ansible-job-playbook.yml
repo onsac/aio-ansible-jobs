@@ -1,6 +1,6 @@
 ---
 - name: aio-ansible - Template SO
-  hosts: {{ ansibleHost }}
+  hosts: "{{ ansibleHost }}"
   tasks:
      - name: aio-ansible - TASK #1
-       command: {{ ansibleCommand }}
+       command: "{{ ansibleCommand }}"
