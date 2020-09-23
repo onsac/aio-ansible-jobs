@@ -1,0 +1,9 @@
+---
+- name: aio-ansible - Template SO
+  hosts: "{{ ansibleHost }}"
+  tasks:
+     - name: TASK "{{ output }}" 
+       shell: "{{ ansibleCommand }}"
+       register: job_output
+     - name: Set fact
+       set_fact: '{{ output }}={{ job_output }}'
